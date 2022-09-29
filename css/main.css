@@ -90,3 +90,8 @@
      font-size: 50px;
      font-weight: bold;
  }
+ h1 {
+    text-align: center;
+    background-color: #eee;
+}
+
