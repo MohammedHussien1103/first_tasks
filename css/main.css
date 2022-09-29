@@ -1,0 +1,92 @@
+ h1 {
+     background-color: red;
+     text-align: center;
+ }
+
+ div {
+     position: relative;
+     width: 300px;
+     height: 60px;
+     background-color: #eee;
+     margin: 10px;
+     text-align: center;
+     padding-top: 38px;
+     left: 50%;
+
+ }
+
+ div:empty {
+     background-color: red;
+ }
+
+ .task2 {
+     position: relative;
+     left: 50%;
+     background-color: #eee;
+     width: 300px;
+     text-align: center;
+ }
+
+ .task2::first-letter {
+     background-color: red;
+     color: white;
+
+     font-weight: bold;
+     font-size: 34px;
+     display: inline-block;
+     margin-left: -64px;
+
+
+
+ }
+
+ .task3 {
+     position: relative;
+     background-color: #eee;
+ }
+
+ .task3::before {
+     content: attr(data-person);
+     background-color: rgb(175, 175, 175);
+     margin-left: 10px;
+     position: relative;
+     left: -14px;
+     display: inline-block;
+
+
+ }
+
+ .task3::after {
+     background-color: transparent;
+
+
+     content: "";
+     width: 0px;
+     height: 0px;
+     position: absolute;
+     top: 14px;
+     margin-top: -10px;
+     left: 38px;
+     border-width: 5px;
+     border-style: solid;
+     border-color: transparent red transparent transparent;
+
+
+ }
+
+ .onet {
+     background-color: #eee;
+     border-right: 5px solid red;
+     counter-increment: count;
+ }
+
+ .onet::before {
+     content: counter(count);
+     background-color: red;
+     width: 20px;
+     height: 20px;
+     color: white;
+     text-align: center;
+     font-size: 50px;
+     font-weight: bold;
+ }
